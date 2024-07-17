@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miguel Munoz</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+  <meta name="description" content="Miguel's Resume" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/navbar.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/profile.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/skills.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/experiences.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/contact.css')}}" />
+  <script defer src="{{url_for('static', filename='js/app.js')}}"></script>
+</head>
+
+<body>
+  <header class="topheader">
+    <nav class="topnav">
+      <a href="#" class="logo">
+        <img height="50" width="50" alt="programador" src="{{url_for('static', filename='img/yopi2.jpg')}}" />
+        <div class="logotype">
+          Miguel Muñoz Catedral<br />
+        </div>
+      </a>
+      <button class="open-menu" aria-label="Abrir menú">
+        <img src="{{url_for('static', filename='img/hamburger-icon.svg')}}" alt="abrir menú" />
+      </button>
+      <ul class="menu">
+        <button class="close-menu" aria-label="Cerrar menú">
+          <img src="img/close-icon.svg" alt="cerrar menú" />
+          <img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="cerrar menú" />
+        </button>
+        <li><a href="#profile" class="selected">Profile</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="horizontal-padding vertical-padding">
+    <section class="profile" id="profile">
+      <div class="profile-info">
+        <h1 class="profile-title">Hi, I am <br />Miguel Muñoz Catedral</h1>
+        <p class="profile-details">
+          Holds knowledges in teaches math and Web development. Proficients in resolution of problems. Open to any job
+          opportunities that allow me to continue growing and developing my skills and hobbies.
+          I am from Costa Rica and have been in United State since February 2024
+        </p>
+        <a id="view-btn" class="profile-btn" href="/view" target="_blank">View Resume</a>
+        <a class="profile-btn" href="/download" download>Download PDF</a>
+      </div>
+      <span class="profile-img-section">
+        <img class="profile-img" src="{{url_for('static', filename='img/yopi3.jpg')}}" alt="programador" />
+        <div class="profile-img-line"></div>
+      </span>
+    </section>
+  </div>
+
+  <section class="experiences" id="experience">
+    <!-- <img src="img/wave.svg" alt="división" class="wave" /> -->
+    <div class="experiences-body">
+      <h2 class="experiences-title">Experience</h2>
+      <div class="experiences-grid">
+        <div class="empty"></div>
+        <div class="line"></div>
+        <div class="experience">
+          <div class="experience-date">Feb - June 202</div>
+          <div class="experience-company">Lowe's Home Improvement</div>
+          <div class="experience-position">Receiver/Stocker</div>
+          <div class="experience-description">
+            <ul>
+              <li>
+                Assisted in unload merchandise from delivery trucks.
+              </li>
+              <li>
+                Organized and stocked products on shelves.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience experience_left">
+          <div class="experience-date">2017-2021</div>
+          <div class="experience-company">Bakery gluten - free</div>
+          <div class="experience-position">Cook's assistant</div>
+          <div class="experience-description">
+            <ul>
+              <li>
+                Prepared and baked gluten free desserts.
+              </li>
+              <li>
+                Cleaned and washed kitchen utensils
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="line"></div>
+        <div class="experience">
+          <div class="experience-date">2006-2016</div>
+          <div class="experience-company">Spanish Language Institute</div>
+          <div class="experience-position">Messanger, Janitor, Assistant Manager</div>
+          <div class="experience-description">
+            <ul>
+              <li>Clean offices and classrooms, handle document delivery, and perform general office tasks, cashier
+                duties.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="horizontal-padding vertical-padding">
+    <section class="skills" id="skills">
+      <h2 class="skills-title">Skills</h2>
+      <ul class="skills-list">
+        <li class="skills-skill">Hardworking</li>
+        <li class="skills-skill">Computer skills</li>
+        <li class="skills-skill">Teamwork</li>
+        <li class="skills-skill">Multitasking</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="horizontal-padding vertical-padding">
+    <section class="contact" id="contact">
+      <h2 class="contact-title">Contact</h2>
+      <div class="contact_main">
+        <div class="mobile">
+          <img class="mobile-img" src="{{url_for('static', filename='img/mobile-solid.svg')}}" alt="">
+          <p>(661) 468-6597
+        </div>
+        <div class="mobile">
+          <img class="mobile-img" src="{{url_for('static', filename='img/square-envelope-solid.svg')}}" alt="">
+          <p>mcatedral24@gmail.com</p>
+        </div>
+      </div>
+      <!-- media -->
+      <div class="media">
+        <nav class="social">
+          <ul class="social-list">
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=16614686597&text=You%20can%20contact%20me%20on%20WhatsApp!"
+                target="_blank" rel="noopener noreferrer" tabindex="0" class="text-green">
+                <i id="icon-whatsapp" class="fab fa-whatsapp-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/miguelmunozcate/" target="_blank" rel="noopener noreferrer"
+                tabindex="0" class="text-green">
+                <i id="icon-linkedIn" class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- media -->
+
+
+
+    </section>
+  </div>
+</body>
+
+</html>
