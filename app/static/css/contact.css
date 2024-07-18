@@ -49,11 +49,12 @@
 }
 .mobile{
   display:flex;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-top:5px;
+
 }
 .contact_main{
   display: flex;
+  flex-direction: column;
   margin-top: 20px;
 }
 .mobile-img{
@@ -64,3 +65,12 @@
   filter: drop-shadow(0 0 5px var(--secondary-color));
 }
 
+@media (min-width: 950px){
+  .contact_main{
+    display: flex;
+    flex-direction: row;
+  }
+  .mobile{
+    margin: 0 10px;
+  }
+}
