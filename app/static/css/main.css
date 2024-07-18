@@ -33,11 +33,11 @@ a {
   padding-right: 25px;
 }
 .vertical-padding {
-  padding-top: 25px;
+  padding-top: 50px;
   padding-bottom: 25px;
 }
 
-@media (min-width: 950px) {
+/* @media (min-width: 950px) {
   .horizontal-padding {
     padding-left: 70px;
     padding-right: 70px;
@@ -46,4 +46,4 @@ a {
     padding-top: 70px;
     padding-bottom: 70px;
   }
-}
+} */

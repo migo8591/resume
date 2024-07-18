@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: rgb(31, 179, 224);
   color: var(--text-color-inverse);
   font-size: 18px;
   border-radius: 14px;
@@ -30,7 +31,9 @@
 }
 #icon-linkedIn{
   font-size: 30px;
-  color:rgb(31, 179, 224)
+  color: #1017da;
+  z-index: 100;
+  
 }
 
 .media{
